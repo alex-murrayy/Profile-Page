@@ -8,58 +8,73 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
 }
 
-.container {
-    background-color: #3e3e3e; /* Darker container background */
-    padding: 30px; /* Padding for spaciousness */
+header {
+    background-color: #3e3e3e; /* Darker header background */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    background-color: #3e3e3e; /* Darker section background */
+    color: #e0e0e0; /* Light text color */
+    margin: 20px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 80%;
+    max-width: 800px;
+}
+
+h2 {
+    color: #ffffff; /* White text color */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+.video-container {
+    margin: 20px 0;
     text-align: center;
 }
 
-h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="number"] {
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #3e3e3e; /* Darker footer background */
+    color: #e0e0e0; /* Light text color */
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+footer a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: #0056b3;
+footer a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
 }
 
-#result {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
+
